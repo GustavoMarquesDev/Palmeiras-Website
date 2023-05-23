@@ -213,6 +213,7 @@ section p {
 .contact-methods {
   padding: 0 50px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contact {
@@ -225,4 +226,37 @@ section p {
 
 .copy-text {
   margin-left: 50px;
+}
+
+form button {
+  background-color: #010f03;
+  color: #04ff04;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  /*hover é um pseudo seletor*/
+  background-color: #13e251;
+  color: #010f03; /*mudar cor do botão ao colocar o mouse em cima*/
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #17a12e; /*para mudar a cor quando o cursor estiver em cima do sua mensagem*/
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
